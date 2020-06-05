@@ -82,6 +82,11 @@ form label {
     margin-bottom: 8px;
 }
 
+.red-star {
+    color: red;
+    font-size: 15px;
+}
+
 form .field-group .field + .field {
     margin-left: 15px;
 }
@@ -103,4 +108,49 @@ form button {
 form button:hover {
     background-color: rgba(4, 90, 1, 0.863);
     width: 265px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #ecebeb;
+    list-style: none;
+    border: 2px solid #ecebeb;
+    border-radius: 8px;
+    height: 160px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.items-grid li:hover {
+    background-color: #c5c5c5;
+    border: 2px solid #c5c5c5;
+}
+
+.items-grid li span {
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+}
+
+.items-grid li.selected {
+    background: #ccf0da;
+    border: 2px solid #bfdfcc;
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
 }

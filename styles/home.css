@@ -20,8 +20,8 @@
 #page-home header a span{
     margin-right: 15px;
     display: flex;
-    background: url("../Imagens/icones/log-in.svg");
-    width: 25px;
+    background: url("../Imagens/icones/log-in.svg") no-repeat;
+    width: 20px;
     height: 20px;
 }
 

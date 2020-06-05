@@ -31,44 +31,77 @@
                     </legend>
 
                     <div class="field">
-                        <label for="name">Nome da entidade</label>
-                        <input type="text" name="name">
+                        <label for="name">Nome da entidade <span class="red-star">*</span> </label>
+                        <input type="text" name="name" required>
                     </div>
 
                     <div class="field-group">
                         <div class="field">
-                            <label for="adress">Endereço</label>
-                            <input type="text" name="adress">
+                            <label for="adress">Endereço <span class="red-star">*</span></label>
+                            <input type="text" name="adress" required>
                         </div>
                         <div class="field">
-                            <label for="adress2">Número/Complemento</label>
-                            <input type="text" name="adress2">
+                            <label for="adress2">Número/Complemento <span class="red-star">*</span></label>
+                            <input type="text" name="adress2" required>
                         </div>
                     </div>
 
                     <div class="field-group">
                         <div class="field">
-                            <label for="state">Estado</label>
-                            <select name="uf">
+                            <label for="state">Estado <span class="red-star">*</span></label>
+                            <select name="uf" required>
                                 <option value="">Selecione o Estado</option>
                             </select>
                             <input type="hidden" name="state">
                         </div>
 
                         <div class="field">
-                            <label for="city">Cidade</label>
-                            <select name="city" disabled>
+                            <label for="city">Cidade <span class="red-star">*</span></label>
+                            <select name="city" disabled required>
                                 <option value="">Selecione a Cidade</option>
                             </select>
                         </div>
                     </div>
                 </fieldset>
 
-                <!-- <fieldset>
-                        <legend>
-                            <h2>Items de coleta</h2>
-                        </legend>
-                </fieldset> -->
+                <fieldset>
+                       <legend>
+                           <h2>Ítens de coleta</h2>
+                       </legend>
+
+                       <div class="items-grid">
+                           <li data-id="1" class="selected">
+                               <img src="../Imagens/icones/lampadas.svg" alt="Lâmpadas">
+                               <span>Lâmpadas</span>
+                           </li>
+
+                            <li data-id="2">
+                                <img src="../Imagens/icones/baterias.svg" alt="Pilhas e Baterias">
+                                <span>Pilhas e Baterias</span>
+                            </li>
+
+                            <li data-id="3">
+                                <img src="../Imagens/icones/papeis-papelao.svg" alt="Papéis">
+                                <span>Papéis e Papelão</span>
+                            </li>
+
+                            <li data-id="4">
+                                <img src="../Imagens/icones/organicos.svg" alt="Orgânicos">
+                                <span>Resíduos Orgânicos</span>
+                            </li>
+
+                            <li data-id="5">
+                                <img src="../Imagens/icones/eletronicos.svg" alt="Resíduos Eletrônicos">
+                                <span>Resíduos Eletrônicos</span>
+                            </li>
+                            
+                            <li data-id="6">
+                                <img src="../Imagens/icones/oleo.svg" alt="Óleo de Cozinha">
+                                <span>Óleo de Cozinha</span>
+                            </li>
+                       </div>
+                       <input type="hidden" name="items" value="">
+                </fieldset>
 
                 <button type="submit">Cadastrar ponto de coleta</button>
             </form>
