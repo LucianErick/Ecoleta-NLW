@@ -1,6 +1,7 @@
 :root {
     --title-color: rgb(10, 26, 117);
     --primary-color: #34cb79;
+    --secundary-color: #dddddd;
 }
 
 * {

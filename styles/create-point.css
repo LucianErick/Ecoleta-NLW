@@ -64,7 +64,7 @@ form .field-group {
 }
 
 form input, form select {
-    background-color: #ecebeb;
+    background-color: var(--secundary-color);
     border: 0;
     padding: 16px 20px;
     font-size: 16px;
@@ -117,9 +117,9 @@ form button:hover {
 }
 
 .items-grid li {
-    background-color: #ecebeb;
+    background-color: var(--secundary-color);
     list-style: none;
-    border: 2px solid #ecebeb;
+    border: 2px solid var(--secundary-color);
     border-radius: 8px;
     height: 160px;
     padding: 32px 24px 16px;
@@ -133,8 +133,8 @@ form button:hover {
 }
 
 .items-grid li:hover {
-    background-color: #c5c5c5;
-    border: 2px solid #c5c5c5;
+    background-color: var(--secundary-color);
+    border: 2px solid var(--secundary-color);
 }
 
 .items-grid li span {

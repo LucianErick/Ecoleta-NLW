@@ -19,6 +19,24 @@
         align-items: center;
     }
 
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results img {
+        height: 250px;
+    }
+
+    #page-search-results header img {
+        width: 300px;
+    }
+
+    body::after {
+       top: 0; 
+
+    }
+
+    
 }
 
 @media (min-width: 2100px) {
