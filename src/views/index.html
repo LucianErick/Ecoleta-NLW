@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="../assets/icones/logo.svg" alt="Logomarca">
+            <a href="/create-point">
+                <span id="login-button"></span>
+                Cadastre um ponto de coleta
+            </a>
+        </header>
+
+        <main>
+            <h1>{{ title }}</h1>
+            <p>Ajudamos pessoas a encontrarem de coleta de forma eficiente</p>
+            <a href="#">
+                <span></span>
+                <strong>Pesquisar Pontos de coleta</strong>
+            </a>
+        </main>
+
+    </div>
+{% endblock content %}
+
+{% block modal %}
+    {% include "partials/modal.html" %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="./scripts/home.js"></script>
+{% endblock scripts %}
