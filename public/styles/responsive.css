@@ -59,3 +59,143 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    #page-home main h1 {
+        font-size: 32px;
+    }
+
+    #page-home main p {
+        font-size: 20px;
+    }
+
+    #page-home main a {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    #page-home main p {
+        font-size: 16px;
+    }
+
+    #page-home main a {
+        margin-top: 15px;
+        width: 300px;
+        height: 60px;
+    }
+
+    #page-home main a span {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-height: 425px) {
+    #page-home main p {
+        font-size: 16px;
+    }
+
+    #page-home main a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 300px;
+        height: 50px;
+    }
+    #page-home main a span {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px 0 0 8px;
+    }
+}
+
+@media (max-width:375px) {
+    
+    #page-home .content header a {
+        font-size: 12px;
+    }
+    
+    #page-home main h1 {
+        font-size: 25px;
+    }
+
+    #page-home main p {
+        font-size: 13px;
+        margin-top: 0px;
+        
+    }
+
+    #page-home header a span {
+        margin-right: 10px;
+    }
+}
+
+@media (max-height: 375px) {
+    #page-home main h1 {
+        font-size: 22px;
+    }
+
+    #page-home main p {
+        font-size: 12px;
+        margin-top: 0px
+    }
+
+    #page-home main a {
+        margin: 0;
+    }
+    #page-home .content header a {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    #page-home .content header a {
+        font-size: 10px;
+    }
+
+    #page-home main p {
+        font-size: 10px;
+    }
+
+    #page-home main a {
+        
+        width: 200px;
+        font-size: 10px;
+    }
+
+    span::after {
+        width: auto;
+        height: auto;
+    }
+
+    #page-home main a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 280px;
+        height: 50px;
+    }
+
+
+    #page-home main a span {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px 0 0 8px;
+    }
+}
+
+@media (max-height:320px) {
+    #page-home main {
+        max-width: 600px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #page-home main h1{
+        margin-top: 20px;
+    }
+}
+
+/* Page Create Point */
