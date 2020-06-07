@@ -255,3 +255,48 @@
         font-size: 11.5px;
     }
 }
+
+/* Modal */
+
+@media (max-width: 425px) {
+    #modal .header h1 {
+        margin-left: 20px;
+    }
+
+    #modal .header a {
+        margin-right: 20px;
+    }
+
+    #modal form label {
+        margin-left: 20px;
+    }
+
+    #modal form input {
+        width: 300px;
+        height: 60px;
+        padding-left: 20px;
+    }
+
+    #modal form button {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+/* Search Results Page */
+
+@media (max-width: 425px) {
+    #page-search-results header img {
+        width: 250px;
+        margin-right: 20px;
+        margin: 10px;
+    }
+
+    #page-search-results header a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    #page-search-results header a span {
+    }
+}
