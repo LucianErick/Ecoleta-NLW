@@ -7,6 +7,7 @@ function populateUFs() {
         for (const state of states) {
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
         }
+        citySelect.disabled = false
     })
 }
 
@@ -47,7 +48,7 @@ for (const item of itemsToCollect) {
     item.addEventListener("click", handleSelectedItem)
 }
 
-const collectedItems = document.querySelector("input[name=items")
+const collectedItems = document.querySelector("input[name=items]")
 let selectedItems = []
 
 function handleSelectedItem(event) {

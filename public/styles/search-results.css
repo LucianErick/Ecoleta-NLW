@@ -1,12 +1,12 @@
 body::after {
     content: "";
-    position: fixed;
+    position: absolute;
     background-color: white;
     
-    top: 250px;
+    top: 16rem;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0;  
     z-index: -1;
     
 }
